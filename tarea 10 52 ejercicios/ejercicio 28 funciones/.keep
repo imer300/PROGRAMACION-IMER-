@@ -1,0 +1,17 @@
+#include <iostream>
+ using namespace std;
+ 
+ int suma() {
+ 	return 5+7;
+ }
+ 
+ int main (int argc,char const *argv[])
+{
+	int resultado=0;
+	resultado=suma();
+	cout<< resultado;
+	
+	
+	
+	return 0;
+}
