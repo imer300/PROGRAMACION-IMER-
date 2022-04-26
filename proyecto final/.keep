@@ -1,0 +1,535 @@
+#include <iostream>  //proyecto final de  Imer Brock//
+#include <stdio.h>  //10) Ordenes de trabajo: clientes, reparacion, venta de equipo o respuestos//
+#include <conio.h>
+#include <cstdlib>
+
+int main  ()
+{
+	int inf, des, serv, comp, tot, pago, pago1, tot1, pago2, tot2, pago3, tot3, pago4, tot4, pago5, tot5, pago6, tot6, pago7, tot7, ptec, hp, tecl, hpto, compto;
+	int mou, moude, mouto, mouhp, mouh, cpu1, cpude, cputo, cputo2, cpdell, cpuhp, cphpto, cputo3, impre, impep, impcan, impepag, impepto, broimp, brotcan, brotpag, broto;
+	int oprefa, torni, cantorni, patorni, tornito, tuer, cantue, tuepag, tueto, gomi, gomican, gomipag, gomito, monielec, marcmoni, camcant, camwe, camto, campag;
+	int crtde, crdecant, crdepag, crdeto, crtib, crtibcan, crtibpag, crtibto, plamarc, pladel, pladecan, pladepag, pladeto, plato, platocan, platopag, platot;
+	float pag, total1, pag2, total2, total3, pag3, total4, pag4, total5, pag5, total6, pag6, total7, pag7;
+	
+	system ("Color 02");  //inspiracion que tube en el examen 1//
+
+	printf (" Reparaci%cn de equipo de Computo en Softtware y Hardware\n\n", 162);
+	printf ("\t\t\t\tIMER COM\t\t\t   \n");
+
+	
+	printf ("\tOpciones de la empresa:\n\n", 162);
+	printf ("\t1. Eslogan\n");
+	printf ("\t2. Misi%cn de la empresa\n", 162);
+	printf ("\t3. Visi%cn de la empresa\n", 162);
+	printf ("\t4. Direcci%cn de la empresa\n", 162);
+	printf ("\t5. Contactanos\n", 130);
+	printf ("\t6. Servicios al cliente\n");
+	printf ("\t7. Comprar articulos\n");
+	printf ("\t8. Salir\n");
+	printf ("\tQue opci%cn elijes?: ", 162);
+	scanf ("%d", &inf);
+	system ("cls");
+	switch (inf)
+	{
+		case 1:
+			printf ("\tEslogan\n");
+			printf ("\tSeguridad y reparaci%cn a tu alcanze con IMER COM\n", 162);
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			break;
+		case 2:
+			printf ("\tMisi%cn\n", 162);
+			printf ("\tSer el imperio de computo mas fuerte del continente\n");
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			break;
+		case 3:
+			printf ("\tVisi%cn\n", 162);
+			printf ("\tGanar mucho dinero!!..\n", 164);
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			break;
+		
+		
+		case 4:
+			printf ("\tDirecci%cn\n", 162);
+			printf ("\tBarrio Guamilito a la par de pollo landia 7 calle 6 avenida", 167);
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			break;
+		case 5:
+			printf ("\t\tCONTACTO\n", 130);
+			printf ("\tIMER COM:  11-69-69-69\n", 161);
+			printf ("\tIMERCOM@GMAIL.COM\n", 161);
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			break;
+		
+		
+		case 6:
+			int main1 ();
+			printf ("\tSERVICIOS \n\n");
+				printf ("\tEstos son los servicios que ofrecemos para tus computadoras:\n\n", 161);
+				printf ("\t1. Limpieza y reparacion a Hardware = $150.\n");
+				printf ("\t2. Desinfecci%cn de virus = $100.\n", 162);
+				printf ("\t3. Actualizaci%cn de Software = $200.\n", 162);
+				printf ("\t4. Formateo y actualizaci%cn = $200.\n", 162);
+				printf ("\t5. Cambio de piezas (Teclado, Mouse, Monitor) = $200.\n");
+				printf ("\t6. Compra de accesorios = $150.\n");
+				printf ("\t7. Instalaci%cn de Software = $200.\n", 162);
+				printf ("\t8. Salir\n");
+				printf ("\tQue servicio deseas:");
+				scanf ("%d", &serv);
+				if (serv==1)
+			{
+				system ("cls");
+				printf ("\n\tLimpieza y arreglo a Hardware - Costo $150\n");
+				printf ("\tLimpieza al CPU, mouse, teclado, monitor, u otro aparato\n\tdandole tambien un mantenimiento sobre alguna falla\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag);
+				total1 = pag - 150;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COMR\n", total1);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+				if (serv==2)
+			{
+				system ("cls");
+				printf ("Desinfecci%cn de virus - Costo $100\n", 162);
+				printf ("Analisis e inspeccion de virus en tu ordenador, dandole tambien alguna vacuna de ello\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag2);
+				total2 = pag2 - 100;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total2);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+				if (serv==3)
+			{
+				system ("cls");
+				printf ("Actualizaci%cn de Software - Costo $200\n", 162);
+				printf ("Reinstalacion de validadores en programas, actualizacion de programas\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag3);
+				total3 = pag3 - 200;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total3);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+			if (serv==4)
+			{
+				system ("cls");
+				printf ("Formateo y actualizaci%cn - Costo $200\n", 162);
+				printf ("Reinstalacion de sistema, respaldo de datos, validacion de sistema, e instalacion de programas\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag4);
+				total4 = pag4 - 200;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total4);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+			if (serv==5)
+			{
+				system ("cls");
+				printf ("Cambio de piezas (Teclado, Mouse, Monitor) - Costo $200\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag5);
+				total5 = pag5 - 200;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total5);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+			if (serv==6)
+			{
+				system ("cls");
+				printf ("Compra de accesorios - Costo $150\n");
+				printf ("Tapete, estampillas, ventilador\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag6);
+				total6 = pag6 - 150;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total6);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else
+			if (serv==7)
+			{
+				system ("cls");
+				printf ("Instalaci%cn de Software - Costo $200\n", 162);
+				printf ("Instalacion de programas necesarios y al gusto del usuario\n");
+				printf ("Ingresa tu pago\n");
+				scanf ("%f", &pag7);
+				total7 = pag7 - 200;
+				printf ("Tu cambio es %.2f\n\n\tGracias por tu preferencia\n\tIMER COM\n", total7);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+		else
+			if (serv==8)
+			{
+				system ("cls");
+				printf ("\tGracias por ver nuestro programa\n");
+				printf ("\tCOMPUREPAR\n");
+				printf ("\tGarc%ca Rodr%cguez Edwin Ricardo\n", 161, 161);
+				printf ("\tRamos L%cpez Mirelly\n", 162);
+				printf ("\tFlores Buenavista Laura Ivette\n");
+				printf ("\tP%crez Res%cndiz Agust%cn\n", 130, 130, 161);
+				printf ("\tRojas Mart%cnez Norberto\n", 161);
+				return 0;
+			}
+		else
+		default:
+			{
+				printf ("Elecci%cn no valida", 162);
+			system ("pause>nul");
+			system ("cls");
+			return main ();
+			}
+		break;
+		case 7:
+			printf ("\tLos articulos en venta son:\n");
+			printf ("\t1. Teclado\n");
+			printf ("\t2. Mouse\n");
+			printf ("\t3. CPU\n");
+			printf ("\t4. Impresora\n");
+			printf ("\t5. Refacciones para computadoras\n");
+			printf ("\t6. Monitor\n");
+			printf ("\t7. Camara web\n");
+			printf ("\tQue deseas comprar?\n");
+			scanf ("%d", &comp);
+			if (comp==1)
+			{
+				printf ("\n\tQue marca de teclado deseas?\n");
+				printf ("\t1. HP o 2. Compaq\n");
+				printf ("\tDigita la opcion: ");
+				scanf ("%d", &tecl);
+				system ("cls");
+				if (tecl==1)
+				{
+					printf ("\t\tTeclado HP  Costo $150\n");
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &hp);
+					hpto=hp-150;
+					printf ("\tTu cambio es: %d\n\tGracias por tu compra\n", hpto);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+				if (tecl==2)
+				{
+					printf ("\t\tTeclado Compaq  Costo $140\n");
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &comp);
+					compto=comp-140;
+					printf ("\tTu cambio es: %d\n\tGracias por tu compra\n", compto);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+		}
+			else;
+			if (comp==2)
+			{
+				printf ("\n\tQue marca de mouse deseas?\n");
+				printf ("\t1. Dell\n\t2. HP\n");
+				printf ("\tDigita la opcion: ");
+				scanf ("%d", &mou);
+				system ("cls");
+				if (mou==1)
+				{
+					printf ("\tMouse Dell  Costo $70\n");
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &moude);
+					mouto=moude-70;
+					printf ("\tTu cambio es: %d\n\tGracias por tu compra\n", mouto);
+					system ("pause>nul");
+					system ("cls");
+					return main();
+				}
+				else;
+				if (mou==2)
+				{
+					printf ("\t\tMouse HP  Costo $100\n");
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &mouh);
+					mouhp=mouh-100;
+					printf ("\tTu cambio es: $%d\n\tGracias por tu compra en IMER COM", mouhp);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+			}
+			else;
+			if (comp==3)
+			{
+				printf ("\tQue marca de CPU deseas?\n");
+				printf ("\t1. Dell\n\t2. HP\n");
+				printf ("\tDigita el codigo: ");
+				scanf ("%d", &cpu1);
+				system ("cls");
+				if (cpu1==1)
+				{
+					printf ("\tCPU Dell  Costo $400\n");
+					printf ("\tCuantos deseas comprar?\n");
+					scanf ("%d", &cpude);
+					cputo=cpude*400;
+					printf ("\tEl total es: $%d\n", cputo);
+					printf ("\tIngrese su pago en efectivo\n");
+					scanf ("%d", &cputo2);
+					cpdell=cputo2-cputo;
+					printf ("\tSu cambio es: $%d\n\tGracias por su compra en IMER COM", cpdell);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+				if (cpu1==2)
+				{
+					printf ("\tCPU HP  Costo $450\n");
+					printf ("\tCuantos deseas comprar?\n");
+					scanf ("%d", &cpuhp);
+					cphpto=cpuhp*450;
+					printf ("\tEl total es: $%d\n", cphpto);
+					printf ("\tIngrese su pago en efectivo\n");
+					scanf ("%d", &cputo3);
+					cpuhp=cputo3-cphpto;
+					printf ("\tSu cambio es: $%d\n\tGracias por su compra\n", cpuhp);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+			}
+			else;
+			if (comp==4)
+			{
+				printf ("\tQue marca de impresora deseas?\n");
+				printf ("\t1. Epson\n\t2. Brother\n");
+				scanf ("%d", &impre);
+		   		if (impre==1)
+		   		{
+		   			printf ("\tEpson  Costo $1500\n");
+					printf ("\tCuantos deseas comprar?\n");
+					scanf ("%d", &impep);
+					impcan=impep*1500;
+					printf ("\tEl total es: $%d\n", impcan);
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &impepag);
+					impepto=impepag-impcan;
+					printf ("\tSu cambio es: $%d\n\tGracias por su compra\n", impepto);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+				if (impre==2)
+				{
+					printf ("\tBrother  Costo $2000\n");
+					printf ("\tCuantos deseas comprar?\n");
+					scanf ("%d", &broimp);
+					brotcan=broimp*2000;
+					printf ("\tEl total es: $%d\n", brotcan);
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &brotpag);
+					broto=brotpag-brotcan;
+					printf ("\tSu cambio es: $%d\n\tGracias por su compra\n", broto);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+			}
+			else;
+			if (comp==5)
+			{
+				printf ("\tRefacciones\n");
+				printf ("\t1. Tornillos\n\t2. Tuercas\n\t3. Gomitas\n");
+				printf ("\tDigita la opcion:\n");
+				scanf ("%d", &oprefa);
+				if (oprefa==1)
+				{
+					printf ("Tornillos  Costo $70 el paquete de 100\n");
+					printf ("\tCuantos paquetes deseas comprar\n");
+					scanf ("%d", &torni);
+					cantorni=torni*70;
+					printf ("\tEl total es: $%d\n", cantorni);
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &patorni);
+					tornito=patorni-cantorni;
+					printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", tornito);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+				if (oprefa==2)
+				{
+					printf ("Tuercas  Costo $70 el paquete de 100\n");
+					printf ("\tCuantos paquetes desea comprar?\n");
+					scanf ("%d", &tuer);
+					cantue=tuer*70;
+					printf ("\tEl total es: $%d\n", cantue);
+					printf ("\tIngrese su pago en efectivo\n");
+					scanf ("%d", &tuepag);
+					tueto=tuepag-cantue;
+					printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", tueto);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+				if (oprefa==3)
+				{
+					printf ("\tGomitas  Costo $100 el paquete de 50\n");
+					printf ("\tCuantos paquetes deseas comprar\n");
+					scanf ("%d", &gomi);
+					gomican=gomi*100;
+					printf ("\tEl Total es: $%d\n", gomican);
+					printf ("\tIngresa tu pago en efectivo\n");
+					scanf ("%d", &gomipag);
+					gomito=gomipag-gomican;
+					printf ("\tSu cambio es :$%d\n\tGracias por su preferencia\n", gomito);
+					system ("pause>nul");
+					system ("cls");
+					return main ();
+				}
+				else;
+ 
+			}
+			else;
+			if (comp==6)
+			{
+				printf ("\tQue tipo de Monitor deseas?\n");
+				printf ("\t1. Monitor CRT\n\t2. Monitor Plano\n");
+				scanf ("%d", &monielec);
+				if (monielec==1)
+				{
+					printf ("\tMonitor CRT\n");
+					printf ("\tQue marca deseas?\n");
+					printf ("\t1. Dell\n\t2. IBM\n");
+					scanf ("%d", &marcmoni);
+					if (marcmoni==1)
+					{
+						printf ("Monitor Dell CRT  Costo $350\n");
+						printf ("\tCuantos deseas comprar?\n");
+						scanf ("%d", &crtde);
+						crdecant=crtde*350;
+						printf ("\tEl total es: $%d\n", crdecant);
+						printf ("\tIngresa tu pago en efectivo\n");
+						scanf ("%d", &crdepag);
+						crdeto=crdepag-crdecant;
+						printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", crdeto);
+						system ("pause>nul");
+						system ("cls");
+						return main ();
+					}
+					else;
+					if (marcmoni==2)
+					{
+						printf ("\tMonitor CRT IBM  Costo $400\n");
+						printf ("\tCuantos deseas comprar\n");
+						scanf ("%d", &crtib);
+						crtibcan=crtib*400;
+						printf ("\tEl total es: $%d\n", crtibcan);
+						printf ("\tIngresa tu pago en efectivo\n");
+						scanf ("%d", &crtibpag);
+						crtibto=crtibpag-crtibcan;
+						printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", crtibto);
+						system ("pause>nul");
+						system ("cls");
+						return main ();
+					}
+					else;
+				}
+				if (monielec==2)
+				{
+					printf ("\tMonitor Plano\n");
+					printf ("\tQue marca deseas comprar?\n");
+					printf ("\t1. Dell\n\t2. Toshiba\n");
+					printf ("\tDigita la opcion: ");
+					scanf ("%d", &plamarc);
+					if (plamarc==1)
+					{
+						printf ("\tMonitor Plano Dell  Costo $500\n");
+						printf ("\tCuantos deseas comprar?\n");
+						scanf ("%d", &pladel);
+						pladecan=pladel*500;
+						printf ("\tEl total es: $%d\n", pladecan);
+						printf ("\tInresa tu pago en efectivo\n");
+						scanf ("%d", &pladepag);
+						pladeto=pladepag-pladecan;
+						printf ("\tSu cambio es: $%d\n\tGracias por su compra\n", pladeto);
+						system ("pause>nul");
+						system ("cls");
+						return main ();
+					}
+					else;
+					if (plamarc==2)
+					{
+						printf ("\tMonitor Plano Toshiba  Costo $600\n");
+						printf ("\tCuantos deseas comprar\n");
+						scanf ("%d", &plato);
+						platocan=plato*600;
+						printf ("\tEl Total es: $%d\n", platocan);
+						printf ("\tIngrese su pago en efectivo\n");
+						scanf ("%d", &platopag);
+						platot=platopag-platocan;
+						printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", platot);
+						system ("pause>nul");
+						system ("cls");
+						return main ();
+					}
+				}
+				else;
+			}
+			else;
+			if (comp==7)
+			{
+				printf ("\tCamara web   Costo $100\n");
+				printf ("\tCuantos deseas comprar?\n");
+				scanf ("%d", &camcant);
+				camwe=camcant*100;
+				printf ("\tEl total es: $%d\n", camwe);
+				printf ("\tIngresa tu pago en efectivo\n");
+				scanf ("%d", &campag);
+				camto=campag-camwe;
+				printf ("\tSu cambio es: $%d\n\tGracias por su preferencia\n", camto);
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+			else;
+			{
+				printf ("\tEleccion no valida\n");
+				system ("pause>nul");
+				system ("cls");
+				return main ();
+			}
+ 
+		break;
+		    case 8:
+			printf ("\tGracias por ver el proyecto fina de IMER\n");
+				printf ("\tIMER COM\n");
+				printf ("\tIMER ALEXANDER BROCK\n", 161, 161);
+				
+				return 0;
+	}
+	getch ();
+	return 0;
+}
